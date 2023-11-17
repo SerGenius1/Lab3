@@ -1,103 +1,81 @@
-* {
-    margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+html {
+	height: 100%;
 }
 
-.wrapper {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+body {
+	margin: 0;
+	font-size: 1.05em;
+	font-family: sans-serif;
+	height: 100%;
+	box-sizing: border-box;
 }
 
-.header {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    color: white;
-    background-color: green;
+header {
+	width: 100%;
+	height: 7%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: green;
+	text-align: center;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 10;
 }
 
-.main {
-    display: flex;
-    flex-direction: row;
-    height: 100%;
-    justify-content: center;  
-
-    flex-basis: auto;
-    flex-grow: 1;
-    flex-shrink: 1;
+footer {
+	width: 100%;
+	height: 4%;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	background-color: black;
+	text-align: center;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 10;
 }
 
-/* .place-holder {
-    background-color: aqua;
-    position: fixed;
-    width: 10px;
-    height: 100%;
-} */
-
-.navigation-bar {
-    width: 200px;
-
-    flex-shrink: 0;
-    background-color: red;
-    width: 250px;
-    flex-grow: 0;
-    color: white;
-
-    display: flex;
-    justify-content: center;
-
+main {
+	width: 100%;
+	min-height: 89%;
+	position: relative;
+	top: 7vh;
+	display: flex;
+	justify-content: center;
 }
 
-/* .navigation-bar__column {
-    background-color: red;
-    position: fixed;
-    height: 100%;
-    width: 200px;
-} */
-
-.navigation-bar__items-container {
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-
+nav {
+	flex: 207px 0 0;
+	background-color: red;
+	color: white;
+	padding: 20px;
+	box-sizing: border-box;
 }
 
-.navigation-bar__items-container__item {
-    margin-top: 10px;
-    color: white;
-    transition: background-color 0.3s ease-out;
+nav ul {
+	list-style-type: none;
+	text-decoration: underline;
+	line-height: 1.7em;
 }
 
-.navigation-bar__items-container__item:hover {
-    background-color: green;
+.content_div {
+	flex: 0 1 600px;
+	padding: 30px;
+	box-sizing: border-box;
 }
 
-.content {
-    margin: 20px;
-    max-width: 600px;
-    flex: auto 1 1;
+span {
+	color: red;
+
+	font-size: 1.2em;
 }
 
-.content__text {
-    text-align: justify;
-}
-
-.content__text::first-letter {
-    font-size: 130%;
-    color: red;
-}
-
-.footer {
-    width: 100%;
-    height: auto;
-    bottom: 0;
-    background-color: black;
-    color: white;
-
-    display: flex;
-    justify-content: center;
-
+::selection {
+	color: white;
+	background-color: green;
 }
